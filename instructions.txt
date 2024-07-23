@@ -10,7 +10,11 @@ venv\Scripts\activate
 ```
 pip install llama-cpp-python[server]==0.2.83 
 pip instal tiktoken
+pip install steramlit==1.36.0
 ```
+
+Download the models from the HF repos into the `models` subfolder
+
 
 ```
 python SmolLM360MinstructCPPtextstream.py
