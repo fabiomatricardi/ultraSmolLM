@@ -34,7 +34,8 @@ Still under test OpenELM
 
 Based on the [Aira-2](https://huggingface.co/nicholasKluge/Aira-2-124M-DPO) series, nicholasKluge/Aira-2-124M-DPO
 ```
-<|startofinstruction|>What is a language model?<|endofinstruction|>A language model is a probability distribution over a vocabulary.<|endofcompletion|>
+<|startofinstruction|>What is a language model?<|endofinstruction|>
+A language model is a probability distribution over a vocabulary.<|endofcompletion|>
 ```
 #### Additional info
 ```
