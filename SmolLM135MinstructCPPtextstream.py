@@ -74,7 +74,12 @@ while True:
     print("\033[92;1m")
     history.append({"role": "user", "content": userinput})
     new_message = {"role": "assistant", "content": ""}
-    
+    #COUNT TOKENS IN HISTORY
+    totaltokens = ''
+    for items in history:
+        totaltokens = totaltokens + items['content']
+    totalcountedtokens = len(encoding.encode(totaltokens))    
+    print(f'Chat history tokens: {totalcountedtokens}')
     full_response = ""
     fisrtround = 0
     for chunk in llm.create_chat_completion(
@@ -108,3 +113,4 @@ Assistant: {full_response}
 ------------------------------------------------
 """
     writehistory(logfile,header)  
+    print(kpis)
